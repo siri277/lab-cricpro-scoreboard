@@ -1,16 +1,103 @@
-/* Type your code here */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,900&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+}
 
-/* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-    font-style: normal;
-    
+body {
+  font-family: "Nunito Sans", sans-serif;
+  padding-left: 200px;
+  background-image: url(/background-image1.png);
+  background-repeat: no-repeat;
+  background-position-x: 600px;
+  background-position-y: 140px;
+  display: inline-flexbox;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 60px 0px;
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  width
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  position: relative;
+  top: 50px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-family: Nunito Sans;
+  font-style: normal;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 10px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 2px;
+  width: 50%;
+  position: relative;
+  
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: orangered;
+}
+
+.popup.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: orangered;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
 }
